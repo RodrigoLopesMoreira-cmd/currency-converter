@@ -114,3 +114,21 @@ div {
     font-weight: 700;
     line-height: 18px;
 }
+
+@media screen and (max-width: 375px){
+
+    main{
+        width: 100%;
+        height: auto;
+        margin:0px;
+    }
+    
+    .logo{
+        display: none;
+    }
+
+}
+
+
+
+
