@@ -5,22 +5,29 @@ const selectSecundaryCurrency = document.querySelector("#secundary-currency")// 
 const secundaryFlag = document.querySelector("#secundary-flag")
 
 function convertValues() {
-   const inputCurrencyValue = document.querySelector("#input-value").value
-const currencyToday = 6.5
-const convertedValue = inputCurrencyValue / currencyToday
-const currencyValueToConvert = document.querySelector(".value-to-convert")//valor em real
-const currencyConvertedValue = document.querySelector(".converted-value")//outras moedas
+    const inputCurrencyValue = document.querySelector("#input-value").value
+    const currencyToday = 6.5
+    const convertedValue = inputCurrencyValue / currencyToday
+    const currencyValueToConvert = document.querySelector(".value-to-convert")//valor em real
+    const currencyConvertedValue = document.querySelector(".converted-value")//outras moedas
+    const primarySelect = document.querySelector(".primary-select")
+    const secundarySelect = document.querySelector(".secundary-select")
 
-currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL"
-}).format(inputCurrencyValue)
+    if (primarySelect.value == "real" && secundarySelect.value == "dolar") {
+        currencyToday.value = 5.6919
+        convertedValue.value = inputCurrencyValue / currencyToday
 
-currencyConvertedValue.innerHTML = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD"
-}).format(convertedValue)
+         currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    }).format(inputCurrencyValue)
 
+    currencyConvertedValue.innerHTML = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+    }).format(convertedValue)
+
+    }
 
 
 }
