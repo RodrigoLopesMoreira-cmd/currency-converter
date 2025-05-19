@@ -27,9 +27,9 @@
       <option value="cripto"> ₿ bitcoin</option>
     </select>
     <p class="text">Converter <b>para</b></p>
-    <select id="secundary-currency" class="converters" name="converters" id="converted-currency">
-      <option value="real">R$ Real</option>
-      <option value="dolar">US$ Dólar americano</option>
+    <select id="secundary-currency" class="converters" name="converters" >
+      <option value="real">US$ Dólar americano</option>
+      <option value="dolar">R$ Real</option>
       <option value="euro">EUR€ Euro</option>
       <option value="cripto"> ₿ bitcoin</option>
     </select>
@@ -38,12 +38,13 @@
     <button class="convert-button">Converter</button>
     <div>
       <img id="primary-flag" class="animation" src="./assets/real.png" alt="brazil-flag">
-      <p class="text-div">Real</p>
+      <p id="primary-currency-name" class="text-div">Real</p>
       <p class="value-to-convert">R$ 0,00</p>
       <img class="animation" src="./assets/Vector.png" alt="vector">
       <img id="secundary-flag" class="animation" src="./assets/dolar.png" alt="united-states-flag">
-      <p class="text-div">Dólar americano</p>
+      <p id="secundary-currency-name" class="text-div">Dólar americano</p>
       <p id="value-dolar" class="converted-value">US$ 0.0</p>
+
     </div>
   </main>
 </body>

@@ -41,7 +41,7 @@ main {
     margin-left: 24px;
 }
 
-.converters {
+.primary-select, .secundary-select, .converters {
     width: 327px;
     height: 48px;
     display: block;
