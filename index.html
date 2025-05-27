@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>currency-converter</title>
+
+</head>
+
+<body>
+  <img src="./assets/logo.gif" class="logo" alt="logo">
+  <main>
+    <p class="text" id="txt
+    ">Converter <b>de</b></p>
+    <select id="primary-currency" class="primary-select" name="converters">
+      <option value="real">R$ Real</option>
+      <option value="dolar">US$ Dólar americano</option>
+      <option value="euro">EUR€ Euro</option>
+      <option value="cripto"> ₿ bitcoin</option>
+    </select>
+    <p class="text">Converter <b>para</b></p>
+    <select id="secundary-currency" class="secundary-select" name="converters">
+      <option value="dolar">US$ Dólar americano</option>
+      <option value="real">R$ Real</option>
+      <option value="euro">EUR€ Euro</option>
+      <option value="cripto"> ₿ bitcoin</option>
+    </select>
+    <p class="text">Valor</p>
+    <input id="input-value" class="converters" type="text" placeholder=" Digite aqui">
+    <button class="convert-button">Converter</button>
+    <div>
+      <img id="primary-flag" class="animation" src="./assets/real.png" alt="brazil-flag">
+      <p id="primary-currency-name" class="text-div">Real</p>
+      <p class="value-to-convert">R$ 0,00</p>
+      <img class="animation" src="./assets/Vector.png" alt="vector">
+      <img id="secundary-flag" class="animation" src="./assets/dolar.png" alt="united-states-flag">
+      <p id="secundary-currency-name" class="text-div">Dólar americano</p>
+      <p id="value-dolar" class="converted-value">US$ 0.0</p>
+
+    </div>
+  </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
